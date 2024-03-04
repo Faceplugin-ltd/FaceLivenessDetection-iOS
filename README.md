@@ -12,7 +12,7 @@
 
 <h2>Install License</h2>
   
-The code below shows how to use the license: https://github.com/Faceplugin-ltd/FaceLivenessDetection-Android/blob/69c8580a22d81406046bb157084b12f6f07b434b/app/src/main/java/com/faceplugin/faceliveness/MainActivity.kt#L32-L40
+The code below shows how to use the license: https://github.com/Faceplugin-ltd/FaceLivenessDetection-iOS/blob/5031e5f1b96433d4c3b2e8e4d717606afe563741/FaceRecognition/ViewController.swift#L48-L52
 
 If you want to get license, please contact us
 
