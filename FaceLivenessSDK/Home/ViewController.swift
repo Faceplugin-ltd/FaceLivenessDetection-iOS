@@ -30,6 +30,8 @@ final class ViewController: UIViewController {
         let logo = UIButton(type: .custom)
         logo.setImage(UIImage(named: "FacePluginLogo")?.withRenderingMode(.alwaysOriginal), for: .normal)
         logo.imageView?.contentMode = .scaleAspectFit
+        logo.contentHorizontalAlignment = .fill
+        logo.contentVerticalAlignment = .fill
         logo.accessibilityLabel = "FacePlugin"
         logo.addTarget(self, action: #selector(openBrand), for: .touchUpInside)
 
@@ -91,8 +93,8 @@ final class ViewController: UIViewController {
             content.bottomAnchor.constraint(equalTo: scroll.contentLayoutGuide.bottomAnchor, constant: -16),
             content.widthAnchor.constraint(equalTo: scroll.frameLayoutGuide.widthAnchor, constant: -32),
 
-            logo.widthAnchor.constraint(equalToConstant: 120),
-            logo.heightAnchor.constraint(equalToConstant: 120),
+            logo.widthAnchor.constraint(equalToConstant: 260),
+            logo.heightAnchor.constraint(equalToConstant: 52),
             row.heightAnchor.constraint(equalToConstant: 112),
             row.widthAnchor.constraint(equalTo: content.widthAnchor),
         ])
