@@ -501,7 +501,7 @@
 				);
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = FaceLivenessSDK/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = FaceLivenessSDK;
+				INFOPLIST_KEY_CFBundleDisplayName = "Faceplugin-Face-Liveness";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -696,7 +696,7 @@
 				);
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = FaceLivenessSDK/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = FaceLivenessSDK;
+				INFOPLIST_KEY_CFBundleDisplayName = "Faceplugin-Face-Liveness";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
