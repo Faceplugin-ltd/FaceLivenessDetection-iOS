@@ -92,7 +92,7 @@ A host embeds both of these, plus the four engine bundles from this repository's
 
   FaceLivenessBridge.xcframework      the Objective-C face of the liveness screens
   FaceLivenessKit.xcframework         the engine lifecycle the bridge calls
-  facerecognitionsdk.framework        the engine (LX / Luxand build)
+  facerecognitionsdk.framework        the engine (FacePlugin engine build)
   FacePluginSDK.xcframework           vendor runtime the engine links
   FacePlugin.xcframework              vendor runtime the engine links
   FaceDetect.xcframework              vendor detector the engine links

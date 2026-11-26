@@ -4,7 +4,7 @@
 #
 # The engine is facerecognitionsdk.framework — the same build Face-Recognition-LivenessDetection-iOS
 # ships — plus the three companion frameworks it links (@rpath FaceDetect / FacePPlugin /
-# FacePluginSDK). Get them from that product's GitHub release (or the SDK repo) and drop them
+# FacePluginSDK). Get them from that product's GitHub release and drop them
 # at the repo root.
 set -euo pipefail
 
@@ -116,7 +116,7 @@ if [[ ! -f "${SDK_BIN}" ]]; then
 fi
 
 SIZE=$(/usr/bin/stat -f%z "${SDK_BIN}" 2>/dev/null || /usr/bin/stat -c%s "${SDK_BIN}")
-# The LX wrapper is a few hundred KB; the old 3DiVi engine was tens of MB.
+# The wrapper is a few hundred KB; the previous engine was tens of MB.
 # Xcode's Swift link stub is about 50 KB and has a swbuild.tmp install name.
 if [[ "${SIZE}" -lt 80000 ]]; then
   echo "error: facerecognitionsdk is ${SIZE} bytes (expected the native wrapper)" >&2
