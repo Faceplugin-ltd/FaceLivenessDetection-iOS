@@ -1,0 +1,49 @@
+# FaceLiveness-iOS-App (customer demo)
+# Push: app source, Xcode project, README, screenshots.
+# Do not push: runtime binaries (Drive), licenses, build output.
+
+# --- IDE / local ---
+.DS_Store
+.idea/
+.vscode/
+xcuserdata/
+*.xcuserstate
+*.xccheckout
+*.xcscmblueprint
+
+# --- Build outputs ---
+build/
+DerivedData/
+DerivedData*/
+*.ipa
+*.dSYM
+*.dSYM.zip
+
+# --- Secrets / license ---
+license.txt
+license.lic
+license.dat
+activation.dat
+FP1.*
+*.fp1
+
+# --- Runtime (download from Drive: facelivenessdk, FaceLivenessEngine, onnxruntime) ---
+*.fpk
+*.pack
+*.db
+*.zip
+*.framework.zip
+*.xcframework/
+*.framework/
+
+# --- Org / kit-only (not for customer GitHub) ---
+/deploy.py
+/upload-library.py
+/upload_library.py
+/lib_drive.yaml
+__pycache__/
+*.pyc
+*.pyo
+source_libraries/
+build_libraries/
+.patch_runtime_state.json
