@@ -299,13 +299,19 @@ engine is still `FaceEngine`, the screens are still `ActiveLivenessViewControlle
 `LivenessCameraViewController`, and the target compiles the *same source files* the app does rather
 than copies of them, so the two cannot drift.
 
+Both xcframeworks are published, so a host does not need a Mac to consume them:
+
+**[`bridge.zip` on the Releases page](https://github.com/Faceplugin-ltd/FaceLivenessDetection-iOS/releases/latest)** — `FaceLivenessBridge.xcframework` and `FaceLivenessKit.xcframework`
+
+A host embeds those two along with the four engine bundles. **Device only** (`ios-arm64`): the
+engine ships no simulator slice, which is the same reason the app itself only runs on a physical
+phone.
+
+To rebuild them yourself, on macOS with Xcode:
+
 ```bash
 ./scripts/build_bridge.sh            # → build/xcframeworks/
 ```
-
-That produces `FaceLivenessBridge.xcframework` and `FaceLivenessKit.xcframework`, which a host
-embeds along with the four engine bundles. **Device only** (`ios-arm64`): the engine ships no
-simulator slice, which is the same reason the app itself only runs on a physical phone.
 
 The wire values it reports — challenge keys, outcome and failure names — are the ones Android uses,
 so a cross-platform host can treat both platforms identically.
