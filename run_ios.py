@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-# Windows:  python run_ios          (prints that iOS needs a Mac)
-# macOS:    python3 run_ios   or  ./run_ios
+# Windows:  python run_ios.py          (prints that iOS needs a Mac)
+# macOS:    python3 run_ios.py   or  ./run_ios.py
 """Build FaceLivenessDetectioniOS and install/launch on a physical iPhone without LLDB.
 
 Xcode Run + wireless debugging often hangs (~6 min) then kills LLDB RPC Server

@@ -19,7 +19,7 @@
 - [ ] Download the four engine bundles — see [Get the frameworks](#get-the-frameworks)
 - [ ] Unzip them into this folder (`facerecognitionsdk.framework`, `FacePluginSDK.xcframework`, `FacePlugin.xcframework`, `FaceDetect.xcframework`)
 - [ ] Open `FaceLivenessSDK.xcodeproj` → select scheme **FaceLivenessDetectioniOS** → set **your** Team
-- [ ] Prefer a **USB** iPhone (Wi‑Fi debug often hangs LLDB). Or: `python3 run_ios`
+- [ ] Prefer a **USB** iPhone (Wi‑Fi debug often hangs LLDB). Or: `python3 run_ios.py`
 - [ ] Home status shows **Ready** → **Active liveness / Passive liveness** unlock
 
 > **Your own app?** Skip to [Setup on your own app](#setup-on-your-own-app). Full API: [doc.faceplugin.com](https://doc.faceplugin.com).
@@ -98,7 +98,7 @@ The bundles are stubs on GitHub because the binaries are too large. The engine i
 
 ### Where to download
 
-**[Download the engine from Releases](https://github.com/Faceplugin-ltd/FaceRecognition-LivenessDetection-iOS/releases/tag/latest)** — `facerecognitionsdk.framework`, `FacePluginSDK.xcframework`, `FacePlugin.xcframework`, `FaceDetect.xcframework`
+**[Download `runtime.zip` from Releases](https://github.com/Faceplugin-ltd/FaceRecognition-LivenessDetection-iOS/releases/tag/latest)** — unzip to get `facerecognitionsdk.framework`, `FacePluginSDK.xcframework`, `FacePlugin.xcframework`, `FaceDetect.xcframework`
 
 All four are **device only** (`ios-arm64`), which is why the app runs on a physical iPhone and not in the simulator.
 
@@ -130,7 +130,7 @@ FaceLivenessDetection-iOS/
 1. Open **FaceLivenessSDK.xcodeproj** in Xcode.
 2. Select scheme **FaceLivenessDetectioniOS** and set your **Team** for signing.
 3. Prefer a **USB** cable. The shared scheme runs **without LLDB** (Wi‑Fi + debugger often hangs ~6 minutes then fails with “LLDB RPC Server has exited”).
-4. Or deploy without Xcode: `python3 run_ios`.
+4. Or deploy without Xcode: `python3 run_ios.py`.
 
 Keep bundle id **`com.faceplugin.faceliveness.app`** for the included license. The app product is **FaceLivenessDetectioniOS** (home-screen name **Face Liveness**).
 
